@@ -8,12 +8,12 @@
 </head>
 
 <body class="port-body">
+    <a href="#home" class="skip-link">Skip to main content</a>
     <header class="port-header">
         <nav class="port-nav">
-            <a href="#home" class="logo">
-                <img src="#" alt="Shubhesh Jha">
+            <!-- <a href="#home" class="logo">
                 <span>Shubhesh Jha</span>
-            </a>
+            </a> -->
             <div class="nav-items">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -24,8 +24,7 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main class="port-main">
         <section id="home">
             <div class="hero-content">
                 <h1>Hi, I'm Shubhesh Jha</h1>
@@ -51,6 +50,8 @@
             <div class="about-content">
 
                 <h2>About Me</h2>
+
+                <img src="profile.jpeg" alt="Profile photo of Shubhesh Jha" width="200" height="150">
 
                 <p>
                     My name is Shubhesh Jha, and I am a Computer Science Engineering
@@ -80,32 +81,41 @@
         </section>
 
         <section id="skills">
-            <div class="skill-content">
-                <h2>My Skills</h2>
-                <p>Technologies and tools I am currently learning and working with.</p>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <h3>HTML</h3>
-                        <p>Comfortable</p>
-                    </div>
-                    <div class="skill-item">
-                        <h3>CSS</h3>
-                        <p>Comfortable</p>
-                    </div>
-                    <div class="skill-item">
-                        <h3>JavaScript</h3>
-                        <p>Currently Learning</p>
-                    </div>
-                    <div class="skill-item">
-                        <h3>Git & GitHub</h3>
-                        <p>Currently Learning</p>
-                    </div>
-                    <div class="skill-item">
-                        <h3>Python</h3>
-                        <p>Familiar</p>
-                    </div>
-                </div>
-            </div>
+            <table border="1" cellpadding="10" cellspacing="5">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Comfortable</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>Comfortable</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Currently Learning</td>
+                    </tr>
+
+                    <tr>
+                        <td>Git &amp; GitHub</td>
+                        <td>Currently Learning</td>
+                    </tr>
+
+                    <tr>
+                        <td>Python</td>
+                        <td>Familiar</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section id="projects">
@@ -119,7 +129,7 @@
 
                 <div class="project-list">
 
-                    <div class="project-card">
+                    <article class="project-card">
                         <h3>Velora Flame</h3>
 
                         <p>
@@ -131,11 +141,23 @@
                             Technologies: HTML, CSS
                         </p>
 
-                        <a href="#">View Project</a>
-                    </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Personal Portfolio Website</h3>
 
+                        <p>
+                            A personal portfolio website created to showcase my skills,
+                            projects, education, and web development journey.
+                        </p>
+
+                        <p>
+                            Technologies: HTML, CSS
+                        </p>
+
+                    </article>
                 </div>
             </div>
+
         </section>
 
         <section id="education">
@@ -159,16 +181,29 @@
         <section id="contact">
             <div class="contact-content">
                 <h2>Contact</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" placeholder="Write your message" required></textarea><br>
+                    <br>
+                    <button type="submit">Send Message</button>
+                </form><br>
                 <div class="contact-links">
                     <a href="mailto:jhashubh015@gmail.com">
                         Email Me
                     </a>
 
-                    <a href="https://github.com/shubhesh-jha07" target="_blank">
+                    <a href="https://github.com/shubhesh-jha07" target="_blank" rel="noopener noreferrer">
                         GitHub
                     </a>
 
-                    <a href="https://www.linkedin.com/in/shubhesh-jha-6a8a26300/" target="_blank">
+                    <a href="https://www.linkedin.com/in/shubhesh-jha-6a8a26300/" target="_blank"
+                        rel="noopener noreferrer">
                         LinkedIn
                     </a>
                 </div>
@@ -177,7 +212,7 @@
 
     </main>
     <footer>
-        <!-- footer -->
+        <p>&copy; 2026 Shubhesh Jha. All rights reserved.</p>
     </footer>
 </body>
 
